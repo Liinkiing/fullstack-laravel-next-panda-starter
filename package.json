@@ -1,7 +1,7 @@
 {
-  "name": "fullstack-laravel-next-starter",
+  "name": "fullstack-laravel-next-panda-starter",
   "version": "0.0.0",
-  "repository": "git@github.com:liinkiing/fullstack-laravel-next-starter.git",
+  "repository": "git@github.com:liinkiing/fullstack-laravel-next-panda-starter.git",
   "author": "Omar Jbara <omar.jbara2@gmail.com>",
   "license": "MIT",
   "devDependencies": {

@@ -38,7 +38,7 @@ To use this template to kickstart your fullstack application, follow these steps
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/Liinkiing/fullstack-laravel-next-starter.git
+    git clone https://github.com/Liinkiing/fullstack-laravel-next-panda-starter.git
     ```
 
 2. Navigate to the `/frontend` and `/backend` directories and follow their respective setup instructions, which are detailed in their respective README files.
