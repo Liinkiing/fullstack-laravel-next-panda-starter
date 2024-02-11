@@ -39,3 +39,9 @@ sail up -d
 ```
 
 Then, you can `cp .env.example .env` and update your variables.
+
+Don't forget to run the Artisan command to generate a valid `APP_KEY`
+
+```shell
+sail artisan key:generate
+```
