@@ -1,0 +1,9 @@
+"Represent a set of permissions for a given resource."
+type ResourceAcl {
+    "Does the user can view the related resource?"
+    view: Boolean!
+    "Does the user can update the related resource?"
+    update: Boolean!
+    "Does the user can delete the related resource?"
+    delete: Boolean!
+}

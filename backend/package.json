@@ -1,0 +1,20 @@
+{
+    "name": "fullstack-laravel-next-starter",
+    "repository": "git@github.com:liinkiing/fullstack-laravel-next-starter.git",
+    "author": "Omar Jbara <omar.jbara2@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "up": "./vendor/bin/sail up -d",
+        "down": "./vendor/bin/sail down",
+        "artisan": "./vendor/bin/sail artisan",
+        "tinker": "./vendor/bin/sail artisan tinker",
+        "db:reset": "./vendor/bin/sail artisan migrate:fresh --seed",
+        "gql:dump": "./vendor/bin/sail artisan lighthouse:print-schema --write && cp ./storage/app/lighthouse-schema.graphql ../frontend/schema.graphql && yarn --cwd ../frontend run gen:gql",
+        "gql:ide-helper": "./vendor/bin/sail artisan lighthouse:ide-helper --omit-built-in"
+    },
+    "devDependencies": {
+        "laravel-vite-plugin": "^0.8.1",
+        "vite": "^4.4.11"
+    }
+}
