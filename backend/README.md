@@ -32,13 +32,13 @@ alias to your shell configuration file (e.g. `~/.bashrc` or
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 ```
 
+Then, you can `cp .env.example .env` and update your variables.
+
 After that, you can start the containers with:
 
 ```shell
 sail up -d
 ```
-
-Then, you can `cp .env.example .env` and update your variables.
 
 Don't forget to run the Artisan command to generate a valid `APP_KEY`
 
