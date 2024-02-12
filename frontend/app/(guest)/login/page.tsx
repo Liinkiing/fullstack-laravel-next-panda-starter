@@ -11,7 +11,7 @@ const LoginPage: FC = () => {
 
   return (
     <div>
-      <Heading as="h1" color="black/50" size="4xl">
+      <Heading as="h1" size="4xl">
         Login
       </Heading>
       <main>
