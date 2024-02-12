@@ -4,13 +4,16 @@ import type { FC } from 'react'
 
 import { useAuth } from '~/shared/hooks/useAuth'
 import { Button } from '~/ui/button'
+import { Heading } from '~/ui/heading'
 
 const LoginPage: FC = () => {
   const { loginWithProvider } = useAuth()
 
   return (
     <div>
-      <h1>Login</h1>
+      <Heading as="h1" color="black/50" size="4xl">
+        Login
+      </Heading>
       <main>
         <Button onClick={() => loginWithProvider('google')}>Connect with Google</Button>
       </main>

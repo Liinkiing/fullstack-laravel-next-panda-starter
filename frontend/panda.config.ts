@@ -2,20 +2,36 @@
 import { defineConfig } from '@pandacss/dev'
 import pandaPreset from '@pandacss/preset-panda'
 
-import { buttonRecipe } from '~/theme/recipes/button'
+import { conditions } from '~/theme/conditions'
+import { keyframes } from '~/theme/keyframes'
+import { recipes, slotRecipes } from '~/theme/recipes'
+import { textStyles } from '~/theme/text-styles'
+import { animations } from '~/theme/tokens/animations'
+import { durations } from '~/theme/tokens/durations'
+import { easings } from '~/theme/tokens/easings'
+import { fonts, fontSizes, fontWeights, letterSpacings, lineHeights } from '~/theme/tokens/typography'
+import { zIndex } from '~/theme/tokens/z-index'
 
 export default defineConfig({
   presets: [pandaPreset],
-  conditions: {
-    extend: {
-      groupHover: '[role=group]:where(:hover, [data-hover]) &',
-    },
-  },
+  conditions,
   theme: {
     extend: {
-      recipes: {
-        button: buttonRecipe,
+      tokens: {
+        animations,
+        durations,
+        easings,
+        fonts,
+        zIndex,
+        fontSizes,
+        fontWeights,
+        letterSpacings,
+        lineHeights,
       },
+      textStyles,
+      keyframes,
+      recipes,
+      slotRecipes,
     },
   },
   // hash: true,
